@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #635985;
+}
+header{
+    position: sticky;
+    top: 0;
+    bottom: 0;
+}
+
+.Navegador{
+    display: flex;
+}
+nav{
+    height: 100px;
+    width: 100%;
+    background-color: #393053;
+    justify-content: space-evenly;
+}
+
+.imag{
+    width: 75px;
+    padding: 10px;
+}
+
+.Menu{
+    display: flex;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 20px;
+}
+
+li{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+li a {
+    color: rgb(209, 209, 209);
+    padding: 14px 35px;
+    text-decoration: none;
+}
+.portafolio{
+    font-size: 20px;
+    align-items: center;
+    color: #FEDEFF;
+    width: 500px;
+}
+.hover{
+    width: 170px;
+    text-align: center;
+}
+.hover:hover{
+    filter: brightness(170%);
+    background-color: #393053;
+    transition: filter .5s;
+    border: 1px;
+    border-radius: 12px;
+    font-size: 25px;
+    border-bottom: 2px solid white;
+}
+.input-b{
+    padding: 15px 15px 15px 50px;
+    background-color: #E3DFFD;
+    font-size: 16px;
+    border-radius: 20px;
+}
+.submit-b{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 18px;
+    width: 60px;
+    height: 40px;
+    border: 0;
+    border-radius: 12px;
+    background-color: #393053;
+    color: rgb(209, 209, 209);
+    cursor: pointer;
+}
+.submit-b:hover{
+    filter: brightness(170%);
+    transition: filter .5s;
+}
+.input-icon{
+    width: 50px;
+    color: black;
+}
+.contactame{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 30px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-left: 450px;
+}
+.contad:hover{
+    border: 0px;
+    border-radius: 12px;
+    background-color: #393053;
+    filter: brightness(170%);
+    transition: filter .5s;
+    font-size: 36px;
+    border-bottom: 2px solid white;
+}
+.contenedor-principal{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 22px;
+    color: rgb(223, 223, 223);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 128px;
+}
+.info{
+    margin-bottom: 196px;
+}
+.info h2{
+    border-bottom: 2px solid white;
+}
+.contenido{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-right: 400px;
+    margin-bottom: 115px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.opacidad{
+    opacity: 1;
+    transition: opacity 1s;
+}
+.contenido h2{
+    border-bottom: 2px solid white;
+}
+.contenedor-img{
+    margin-top: 15px;
+    margin-left: 28px;
+}
+.contenedor-img picture img{
+    width: 140px;
+}
+.contenido-con{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    font-size: 28px;
+}
+.contenido-con p{
+    border-bottom: 1px solid white;
+}
+.contenido-con img{
+    width: 60px;
+    margin: 5px;
+}
+.novato{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.amateur img{
+    width: 65px;
+    margin-top: 10px;
+}
+.button-con{
+    background-color: #635985;
+    border: 0;
+    color: white;
+    font-family: 'Abril Fatface', cursive;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.button-con-solo{
+    background-color: #635985;
+    border: 0;
+    color: white;
+    font-family: 'Abril Fatface', cursive;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    height: 50px
+}
+.button-con-solo:hover{
+    font-size: 40px;
+}
+.button-con:hover{
+    border: 0px;
+    border-radius: 12px;
+    background-color: #635985;
+    filter: brightness(80%);
+    transition: filter .5s;
+
+}
+.contenedor-secundario{
+    padding: 2rem;
+    background-color: #645CAA;
+}
+.slider-wrapper{
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+.slider{
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+}
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.slider-nav a{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #8a8a8a;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+.slider-nav:hover{
+    opacity: 1;
+}
+.proyecto{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+.imagenes img{
+    width: 100px;
+}
+.imagenes{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+footer{
+    background-color: #66347F;
+}

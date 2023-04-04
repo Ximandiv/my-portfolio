@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Emmanuel</title>
+    <link rel="stylesheet" href="index_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&display=swap" rel="stylesheet">  
+    <script type="text/javascript" src="index_script.js"></script>
+    
+    <link rel="shortcut icon" type="image/x-icon" href="heart.png" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="Navegador">
+                <div class="Logo">
+                    <pic>
+                        <img src="heart.png" alt="Logo" class="imag">
+                    </pic>
+                </div>
+                <div class="Menu">
+                    <li><a class="portafolio"><h1>Mi Portafolio como Programador</h1></a></li>
+                    <li><a href="#cont" class="hover">Quién Soy</a></li> 
+                    <li><a href="#proyecto" class="hover">Mis Proyectos</a></li>
+                </div>
+                <div class="contactame">
+                <li><a href="#contactame" class="contad">Contactame!</a></li>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="buscador">
+        <svg  class="input-icon" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+        </svg>
+        <input type="text" name="search" placeholder="Proyectos, Páginas..." class="input-b">
+        <button class="submit-b">Buscar</button>
+    </div>
+    <div class="contenedor-principal" id="cont">
+        <div class="info">
+            <h2>
+                Bienvenido.
+            </h2>
+            <p>
+                Mi nombre es Emmanuel Vanegas Carmona y soy
+            </p>
+            <p>
+                un aspirante a <strong>Programador Junior</strong> en
+            <p>
+            <p>
+                Desarrollo Web y Desarrollo de Videojuegos.
+            </p>
+            <br>
+            <p>
+                Soy estudiante del SENA desde el 2022, y <strong>he participado</strong>
+            </p>
+            <p>
+                en la Global Game Jam 2023 utilizando Unity y C#.
+            </p>
+            <br>
+            <p>
+                Me considero una persona con deseos de aprender y
+            </p>
+            <p>
+                mejorar todos los días para ser una mejor versión
+            </p>
+            <p>
+                de mi mismo.
+            </p>
+            <br>
+            <div class="button-con">
+                <button class="button-con-solo" onclick="wa()">
+                    Conocimientos
+                </button>
+            </div>
+        </div>
+        <div class="contenido" id="opacidad">
+            <div class="conocimientos">
+                <h2>
+                    Mis Conocimientos.
+                </h2>
+            </div>
+            <div class="contenedor-img">
+                <picture>
+                    <img src="Dsw.png" alt="Logos HTML, CSS y JS" class="Dsw">
+                </picture>
+                <picture>
+                    <img src="unity.png" alt="Logo Unity">
+                </picture>
+                <picture>
+                    <img src="c-sharp.png" alt="Logo C#">
+                </picture>
+                <picture>
+                    <img src="python.png" alt="Logo Python">
+                </picture>
+            </div>
+            <div class="contenido-con">
+                <p>Novato</p>
+                <div class="novato">
+                    <img src="bravery.png" alt="corazon naranja">
+                    <img src="bravery.png" alt="corazon naranja">
+                    <img src="bravery.png" alt="corazon naranja">
+                    <img src="bravery.png" alt="corazon naranja">
+                </div>
+                <p>Amateur</p>
+                <div class="amateur novato">
+                    <img src="integrity.png" alt="corazon azul">
+                    <img src="integrity.png" alt="corazon azul" style="opacity: 0;">
+                    <img src="integrity.png" alt="corazon azul">
+                    <img src="integrity.png" alt="corazon azul" style="opacity: 0;">
+                </div>
+                <p>Intermedio</p>
+                <div class="intermedio novato">
+                    <img src="Patience.png" alt="corazon cyan" style="opacity: 0;">
+                    <img src="Patience.png" alt="corazon cyan" style="opacity: 0;">
+                    <img src="Patience.png" alt="corazon cyan" style="opacity: 0;">
+                    <img src="Patience.png" alt="corazon cyan" style="opacity: 0;">
+                </div>
+                <p>Avanzado</p>
+                <div class="avanzado novato">
+                    <img src="justice.png" alt="corazon amarillo" style="opacity: 0;">
+                    <img src="justice.png" alt="corazon amarillo" style="opacity: 0;">
+                    <img src="justice.png" alt="corazon amarillo" style="opacity: 0;">
+                    <img src="justice.png" alt="corazon amarillo" style="opacity: 0;">
+                </div>
+                <p>Experto</p>
+                <div class="experto novato">
+                    <img src="determination.png" alt="corazon rojo" style="opacity: 0;">
+                    <img src="determination.png" alt="corazon rojo" style="opacity: 0;">
+                    <img src="determination.png" alt="corazon rojo" style="opacity: 0;">
+                    <img src="determination.png" alt="corazon rojo" style="opacity: 0;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="proyecto">
+        <section class="contenedor-secundario">
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <img id="slide-1" src="fox.png" alt="Fox de Fox'nBun">
+                    <img id="slide-2" src="calcu.jpeg" alt="Calculadora">
+                    <img id="slide-3" src="ppt.jpeg" alt="Juego Piedra Papel o Tijera">
+                </div>
+                <div class="slider-nav">
+                    <a href="#slide-1" target="_self"></a>
+                    <a href="#slide-2" target="_self"></a>
+                    <a href="#slide-3" target="_self"></a>
+                </div>
+            </div>
+            <div class="proyecto">
+                <br>
+                <h2>
+                    Mis Proyectos.
+                </h2>
+            </div>
+        </section>
+    </div>
+</body>
+<div id="contactame"></div>
+<footer>
+    <div class="redes-sociales">
+        <h2 class="proyecto">Mis Redes Sociales</h2>
+        <div class="imagenes">
+            <a href="https://github.com/Ximandiv" target="_blank"><img src="git.png" alt="Github"></a>
+            <a href="https://www.linkedin.com/in/emmanuel-vanegas-carmona-48191a231/" target="_blank"><img src="lin.png" alt="LinkedIn"></a>
+        </div>
+    </div>
+</footer>
+</html>
